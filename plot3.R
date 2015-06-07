@@ -2,7 +2,7 @@
 
 
 ## 
-## "plot2.R"
+## "plot3.R"
 ##
 ## Plots power consumption over 2 days in February 2007 (02/01/2007 and 
 ## 02/02/2007), extracted from the “Individual household electric power 
@@ -116,16 +116,8 @@ colSums( is.na(power_2d) )
 rm( "power_all" )
 
 
-## plot global active power and save to PNG file
+## plot energy sub metering and save to PNG file
 ##
-# png( "plot2.png", width = 480, height = 480 )
-# plot( power_2d$NewDateTime, 
-#       power_2d$Global_active_power, 
-#       xlab = "", 
-#       ylab = "Global Active Power (kilowatts)", 
-#       type = "l" )
-# dev.off() 
-
 png( "plot3.png", width = 480, height = 480 )
 
 plot( power_2d$NewDateTime, 
